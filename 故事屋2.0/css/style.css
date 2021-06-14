@@ -1,0 +1,226 @@
+/* *{
+    border: 1px solid black;
+} */
+
+body {
+	font-family: 'cursive';
+}
+hr {
+    border:5px solid transparent;
+	height: 5px;
+	background-image: linear-gradient(to right, gray, white, rgb(104, 104, 104))
+}
+html {
+	scroll-behavior: smooth;
+}
+.image1 {
+	width: 80px;
+}
+.timebody {
+	display: flex;
+	list-style: none;
+}
+.timeline {
+	/*定位*/
+	display: flex;
+	position: fixed;
+	top: 50px;
+	left: 465px;
+	margin: 0 auto;
+	z-index: 1000;
+	/* border-top: 2px solid gold;
+	border-bottom: 1px solid gold; */
+}
+.timelist {
+	/* border-right: 1px solid rgb(133, 133, 133); */
+	padding: 10px 40px;
+	font-size: 25px;
+    font-family:DFKai-sb;
+}
+/* .timelist::before{
+    padding-right: 10px;
+    content: "l";
+}
+.timelist::after{
+    padding-left: 10px;
+    content: "l";
+} */
+
+.aclass {
+	color: black;
+	text-decoration: none;
+}
+.aclass:hover {
+	color: gold;
+	text-decoration: none;
+}
+/*======================== 第一頁內容設定===================== */
+
+.story {
+	/* 設定story區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
+	width: 70%;
+	margin: 0 auto;
+	/*區塊(圖片+文字)影子 */
+	/* box-shadow: 0px 5px 8px rgb(29, 29, 29) ; */
+	/* box-shadow: 3px 3px 12px gray; */
+}
+.story-title {
+	color: rgb(231, 162, 106)
+}
+.story-list {
+	text-align: center;
+}
+.story-body {
+	width: 40%;
+	margin: auto auto;
+	padding: 30px 30px;
+}
+
+.story-img {
+	width: 100%;
+	box-shadow: 3px 3px 12px gray;
+}
+.story-text{
+    letter-spacing: 1px;
+    line-height: 1.7;
+    color: rgb(0, 0, 0);
+}
+.ok{
+	width: 100%;
+	margin: 0 auto;
+	
+}
+/*======================== 第二頁內容設定===================== */
+
+.story2 {
+	/* 設定story2區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+.story-img2 {
+	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
+	width: 50%;
+	box-shadow: 3px 3px 12px gray;
+	/* height: 100vh; */
+}
+.story-title2 {
+	color: rgb(192, 101, 41);
+}
+/*======================== 第三頁內容設定===================== */
+
+.story3 {
+	/* 設定story3區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+.story-body3 {
+	width: 30%;
+	margin: auto auto;
+	padding: 30px 30px;
+}
+.story-img3 {
+	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
+	width: 50%;
+	/* height: 100vh; */
+	box-shadow: 3px 3px 12px gray;
+}
+/*======================== 第四頁內容設定===================== */
+
+.story4 {
+	/* 設定story3區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	padding-top: 150px;
+}
+.story-img4 {
+	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
+	width: 50%;
+	box-shadow: 3px 3px 12px gray;
+	/* height: 100vh; */
+}
+/*======================== division內容設定===================== */
+
+.division-title {
+	padding-top: 150px;
+	padding-bottom: 0px;
+	margin-bottom: 0;
+    font-family:DFKai-sb;
+	color: rgb(65, 65, 65);
+}
+.division-title2 {
+	padding-top: 150px;
+	padding-bottom: 140px;
+	margin-bottom: 0;
+    font-family:DFKai-sb;
+	color: rgb(65, 65, 65);
+}
+
+
+/* .division-hr {
+	height: 1px;
+	width: 80%;
+	height: 5px;
+	background-color: blueviolet !important;
+} */
+/*======================== 第五頁內容設定===================== */
+
+.story5 {
+	/* 設定story3區塊寬度，區塊(包含文字和圖片)占總螢幕的大小*/
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+.story-body5 {
+	width: 30%;
+	margin: auto auto;
+	padding: 30px 30px;
+}
+.story-img5 {
+	/* 調整圖片在區塊內的大小，但一樣會維持總螢幕的80% */
+	width: 50%;
+	/* height: 100vh; */
+	box-shadow: 3px 3px 12px gray;
+}
+
+.story-img-c{
+	width: 80%;
+	margin: 0 auto;
+	box-shadow: 3px 3px 12px gray;
+}
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+
+.carousel-fade .carousel-inner .active.left,
+
+.carousel-fade .carousel-inner .active.right {
+   opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+
+.carousel-fade .carousel-inner .next.left,
+
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+
+.carousel-fade .carousel-inner .prev,
+
+.carousel-fade .carousel-inner .active.left,
+
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.animate__animated.animate__bounceInDown {
+	--animate-duration: 1.5s;
+  }
